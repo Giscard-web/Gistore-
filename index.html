@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gistore Conception</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"> <img src="images/GISTORE-Photoroom.png" alt=""></a>
+        </div>
+        <ul class="menu">
+            <li><a href="#home">Acceuil</a></li>
+            <li><a href="#a-propos">À propos</a></li>
+            <li><a href="#popular-design">Designs</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#" class="btn-commande">Commandez</a>
+        <div class="responsive-menu"></div>
+    </header>
+    <!--section acceuil-->
+    <section id="home">
+        <h2>Découvrez le design</h2>
+        <h4>Profitez de nos services</h4>
+        <p>Nous avons le plaisir de vous présenter nos services en design graphique et développement web.</p>
+        <p>Que vous ayez besoin d’une identité visuelle forte, d’une refonte de votre site internet ou d’une solution digitale sur-mesure.</p>
+        <p>notre équipe est prête à vous accompagner dans chaque étape de votre projet.</p>
+        <a href="#" class="btn-commande home-btn">Commandez</a>
+    </section>
+
+    <!--A propos section-->
+    <section id="a-propos">
+        <h1 class="title">À propos</h1>
+        <div class="img-desc">
+           <div class="left">
+                <video src="images/5081433-uhd_4096_2160_25fps.mp4" autoplay></video>
+           </div>
+            <div class="right">
+                <h3>Notre approche se base sur l'écoute, l'innovation et une créativité sans limite</h3>
+                <p>Ensemble, nous construirons une expérience visuelle et interactive qui reflète parfaitement l’essence de votre marque.  et vous aide à vous démarquer dans un environnement numérique en constante évolution.</p>
+                <a href="#">Voir plus</a>
+            </div>
+        </div>
+       
+    </section>
+    <section id="popular-design">
+        <h1 class="title">Designs</h1>
+        <div class="content">
+            <div class="box">
+                <img src="images/GISTORE1.png" alt="">
+                <div class="content">
+                    <div>
+                        <h4>Logo Entreprise</h4>
+                        <p>Création des logos pour Entreprise, selon vos désires...</p>
+                        <a href="#">Voir Plus</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/ACHETER MAINTENANT.png" alt="">
+                <div class="content">
+                    <div>
+                        <h4>Affiche Publicitaire</h4>
+                        <p>Création des Affiches publicitaires, selon vos désires...</p>
+                        <a href="#">Voir Plus</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/CE.png" alt="">
+                <div class="content">
+                    <div>
+                        <h4>Affiche Église</h4>
+                        <p>Création des affiches pour église, selon vos désires...</p>
+                        <a href="#">Voir Plus</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/Qui gère ça.png" alt="">
+                <div class="content">
+                    <div>
+                        <h4>Affiche cover</h4>
+                        <p>Création des covers, selon vos désires...</p>
+                        <a href="#">Voir Plus</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/director.png" alt="">
+                <div class="content">
+                    <div>
+                        <h4>Logo Professionnel</h4>
+                        <p>Création des logos Professionnel, selon vos désires...</p>
+                        <a href="#">Voir Plus</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/programming-background-collage.jpg" alt="">
+                <div class="content">
+                    <div>
+                        <h4>Développement web</h4>
+                        <p>Développement des sites web, selon vos désires...</p>
+                        <a href="#">Voir Plus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1 class="title">Contact</h1>
+        <form action="traitement.php" method="post">
+          <div class="left-right">
+            <div class="left">
+                <label for="name">Nom complet</label>
+                <input type="text">
+                <label>Objet</label>
+                <input type="text">
+                <label for="email">Email</label>
+                <input type="text">
+                <label for="message">Message</label>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="right">
+                <label>Numéro</label>
+                <input type="text">
+                <label>Date</label>
+                <input type="date">
+                <label>Type de design</label>
+                <input type="text">
+                <label>Autres details</label>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+          </div>
+          <button value="">Envoyer</button>
+        </form>
+    </section>
+    <footer>
+        <p>Développement complet par<span> Gistore design</span> | Tous les droits sont réservés.</p>
+    </footer>
+
+    <script>
+        var toogle_menu = document.querySelector('.responsive-menu');
+        var menu = document.querySelector('.menu');
+        toogle_menu.onclick= function(){
+            toogle_menu.classList.toggle('active');
+            menu.classList.toggle('responsive');
+        }
+    </script>
+
+
+</body>
+</html>
